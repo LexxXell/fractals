@@ -14,7 +14,8 @@ itr = int(input("Enter the number of iterations:\n"))
 rule = {
     "+":"+",
     "-":"-",
-    "F":"F+F-F-F+F"
+    "F":"F+F-f-F+F",
+    "f":"fff"
 }
 
 tmp_axiom = ""
