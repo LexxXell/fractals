@@ -1,5 +1,12 @@
 import turtle
 
+turtle.hideturtle()
+turtle.tracer(0)
+turtle.penup()
+turtle.setposition(-380, 300)
+turtle.pensize(2)
+turtle.pendown()
+
 axiom = input("Enter the starting axiom (chars available: F+-):\n")
 itr = int(input("Enter the number of iterations:\n"))
 
@@ -17,15 +24,6 @@ while count <= itr:
         tmp_axiom += rule[char]
     axiom, tmp_axiom = tmp_axiom, ""
     count += 1
-
-print(axiom)
-
-turtle.hideturtle()
-turtle.tracer(0)
-turtle.penup()
-turtle.setposition(-380, 300)
-turtle.pensize(2)
-turtle.pendown()
 
 for char in axiom:
     if char == "+":
