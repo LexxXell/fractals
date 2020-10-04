@@ -36,4 +36,4 @@ for char in axiom:
         turtle.forward(5)
 
 turtle.update()
-turtle.done()
+turtle.mainloop()
