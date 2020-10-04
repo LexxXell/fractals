@@ -17,13 +17,11 @@ rule = {
 }
 
 tmp_axiom = ""
-count = 0
 
-while count <= itr:
+for i in range(itr):
     for char in axiom:
         tmp_axiom += rule[char]
     axiom, tmp_axiom = tmp_axiom, ""
-    count += 1
 
 for char in axiom:
     if char == "+":
